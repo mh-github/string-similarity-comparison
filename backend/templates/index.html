@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask React App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.df20322a.css') }}">
+</head>
+<body>
+    <div id="root"></div>
+    {# Include the hashed filenames dynamically #}
+    {% for file in ['js/592.bf6ca574.chunk.js', 'js/main.d3e34ef7.js'] %}
+        <script src="{{ url_for('static', filename=file) }}"></script>
+    {% endfor %}
+</body>
+</html>
